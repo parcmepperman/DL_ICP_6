@@ -1,0 +1,81 @@
+First run of CNNmodel.py (nothing changed)
+step 0, training accuracy 0.18
+step 100, training accuracy 0.88
+step 200, training accuracy 0.94
+step 300, training accuracy 0.96
+step 400, training accuracy 0.92
+test accuracy 0.9433
+Time for building convnet:
+103588
+
+First run of CNmodel.py (dataset changed to fashion-mnist-master/data/fashion)]
+step 0, training accuracy 0.08
+step 100, training accuracy 0.62
+step 200, training accuracy 0.7
+step 300, training accuracy 0.86
+step 400, training accuracy 0.84
+test accuracy 0.8282
+Time for building convnet:
+94340
+
+Fifth run of CNmodel.py (AdaGrad Optimizer, no change)]
+step 0, training accuracy 0.14
+step 100, training accuracy 0.72
+step 200, training accuracy 0.9
+step 300, training accuracy 0.8
+step 400, training accuracy 0.82
+test accuracy 0.8171
+Time for building convnet:
+111625
+
+Seventeenth run of CNmodel.py (GradientDescent - 16,36,128 in/out channels)
+step 0, training accuracy 0.22
+step 100, training accuracy 0.78
+step 200, training accuracy 0.8
+step 300, training accuracy 0.78
+step 400, training accuracy 0.8
+test accuracy 0.8268
+Time for building convnet:
+46309
+
+Process finished with exit code 0
+Eighteenth run of CNmodel.py (GradientDescent - 8,45,128 in/out channels)
+step 0, training accuracy 0.26
+step 100, training accuracy 0.74
+step 200, training accuracy 0.92
+step 300, training accuracy 0.8
+step 400, training accuracy 0.88
+test accuracy 0.8124
+Time for building convnet:
+34380
+
+Nineteenth run of CNmodel.py (GradientDescent - 8,45,200 in/out channels)
+step 0, training accuracy 0.14
+step 100, training accuracy 0.7
+step 200, training accuracy 0.88
+step 300, training accuracy 0.8
+step 400, training accuracy 0.9
+test accuracy 0.8379
+Time for building convnet:
+35690
+
+Run # 20 (Final run) (GradientDescent --  8,45,500 -- steps = 900 (from 500))
+step 0, training accuracy 0.34
+step 100, training accuracy 0.9
+step 200, training accuracy 0.88
+step 300, training accuracy 0.86
+step 400, training accuracy 0.9
+step 500, training accuracy 0.86
+step 600, training accuracy 0.86
+step 700, training accuracy 0.76
+step 800, training accuracy 0.9
+test accuracy 0.8584
+Time for building convnet:
+64197
+
+From my observations the GitHub ReadMe for A MNIST-like fashion product database was completely accurate in that it is easy
+to get a 93% accuracy from the minst dataset, once the data was changed it hovered around approx 82%, as you can see it wasn't 
+until I changed the step count to almost 1000, the in/out channels to 8,45,500 and applied the gradient descent optimizer 
+that I was able to achieve an 86% accuracy. I strongly believe that if I kept recording data and the separation of channels 
+and increased the amount of steps significantly that I might achieve a 90%, but 94% as in the MINST dataset is not achievable 
+at my level of knowledge...
